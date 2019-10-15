@@ -156,12 +156,7 @@ header.top .topmenu li a {
     text-transform: uppercase;
     display: block;
 }
-header.top .topmenu li a:hover {
-    color: #0b57a2;
-}
-header.top .topmenu li a img {
-    display: inline-block;
-}
+
 header.top .search-bar {
     display: none;
     position: absolute;
@@ -195,6 +190,12 @@ header.top .search-bar form .search-input {
     color: #c8caca;
     font-weight: 600;
     border-radius: 0;
+}
+
+.input-group {
+    position: relative;
+    display: table;
+    border-collapse: separate;
 }
 @media (max-width: 992px) and (min-width: 768px) {
     header.top .search-bar form .search-input {
@@ -236,6 +237,7 @@ header.top .search-bar form button:hover {
 .menu-hamburger {
     display: inline-block;
     background: #fff;
+    border: none;
 }
 @media (min-width: 992px) {
     .menu-hamburger {
@@ -309,7 +311,7 @@ header.top .search-bar form button:hover {
 }
 @media (max-width: 768px) {
     .overlay .overlay-container {
-        float: left;
+        float: right;
    }
 }
 @media (max-width: 360px) {
@@ -330,19 +332,10 @@ header.top .search-bar form button:hover {
     .overlay .box-wrap {
         padding-left: 15px;
         padding-right: 15px;
+        
    }
 }
-.overlay .close-mobile2 {
-    background: url(/_/images/close-menu.png) no-repeat;
-    background-size: 40%;
-    position: absolute;
-    left: -60px;
-    height: 63px;
-    width: 60px;
-    background-position: center center;
-    top: 0;
-    margin: 0;
-}
+
 .overlay .close-container {
     width: 118px;
     height: 136px;
@@ -350,6 +343,12 @@ header.top .search-bar form button:hover {
     right: 0;
     top: 0;
     line-height: 78px;
+    color: #fff;
+}
+
+.fas.fa-times
+{
+    padding: 1rem;
 }
 @media (max-width: 992px) and (min-width: 768px) {
     .overlay .close-container {
@@ -361,7 +360,6 @@ header.top .search-bar form button:hover {
         height: 74px;
         width: 74px;
         right: 0;
-        left: auto;
    }
 }
 .overlay .close-container a {
@@ -414,9 +412,10 @@ header.top .search-bar form button:hover {
     border: 0;
     padding: 0 15px;
     font-size: 20px;
-    font-size: 2rem;
+    font-size: 1rem;
     background-color: transparent;
     color: #fff;
+
 }
 
 .overlay .search-form .inp:hover {
@@ -571,6 +570,10 @@ header.top .search-bar form button:hover {
     padding-left: 0;
     margin-bottom: 0;
     list-style: none;
+}
+
+.overlay .box-wrap {
+    max-width: 400px;
 }
 
 .nav-sidenav li.nav-item {
