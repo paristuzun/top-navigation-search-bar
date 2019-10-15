@@ -13,66 +13,7 @@ header.top {
         padding-bottom: 9px;
    }
 }
-header.top .topbar-blue {
-    background: #0b57a2;
-    text-align: right;
-    min-height: 40px;
-    line-height: 38px;
-}
-@media (max-width: 768px) {
-    header.top .topbar-blue {
-        display: none;
-   }
-}
-header.top .topbar-blue ul {
-    margin: 0;
-    display: inline-block;
-}
-header.top .topbar-blue ul li {
-    display: inline-block;
-    position: relative;
-    padding-right: 24px;
-    padding-left: 12px;
-}
-@media (max-width: 992px) and (min-width: 768px) {
-    header.top .topbar-blue ul li {
-        padding-right: 20px;
-   }
-}
-header.top .topbar-blue ul li:after {
-    content: '/';
-    position: absolute;
-    right: 0;
-    top: 0;
-    color: rgba(255, 255, 255, 0.5);
-}
-header.top .topbar-blue ul li a {
-    color: #fff;
-    font-size: 14px;
-}
-header.top .topbar-blue ul li a:hover {
-    color: rgba(255, 255, 255, 0.5);
-}
-header.top .topbar-blue .change-font {
-    display: inline-block;
-    margin-left: 7px;
-}
-header.top .topbar-blue .change-font a {
-    color: #fff;
-    padding-left: 0;
-}
-header.top .topbar-blue .change-font a.font-size-1 {
-    font-size: 12px;
-}
-header.top .topbar-blue .change-font a.font-size-2 {
-    font-size: 16px;
-}
-header.top .topbar-blue .change-font a.font-size-3 {
-    font-size: 21px;
-}
-header.top .topbar-blue .change-font a:hover {
-    color: rgba(255, 255, 255, 0.5);
-}
+
 header.top .logo {
     margin-top: 5px;
 }
@@ -116,9 +57,11 @@ header.top .topmenu li {
 header.top .topmenu li:last-of-type {
     padding-right: 0px;
 }
+
 @media (max-width: 1200px) and (min-width: 992px) {
     header.top .topmenu li {
-        font-size: 20px;
+        font-size: 1rem;
+        font-weight: bold;
         padding: 10px;
    }
 }
@@ -143,17 +86,7 @@ header.top .topmenu li:last-of-type {
         padding: 0 39px 0 0;
    }
 }
-header.top .topmenu li.btn-menu a {
-    background: #006739;
-    color: #fff;
-    font-size: 23px;
-    font-weight: 500;
-    height: 48px;
-    line-height: 46px;
-    text-align: center;
-    position: relative;
-    padding: 0 25px;
-}
+
 @media (max-width: 575.98px) {
     header.top .topmenu li.btn-menu a {
         min-width: 90px;
@@ -187,7 +120,7 @@ header.top .topmenu li.btn-menu a {
 }
 header.top .topmenu li.btn-menu a:hover {
     color: #fff;
-    background: #02da68;
+    background-color: #D60E96;
 }
 header.top .topmenu li.search {
     width: 48px;
@@ -197,6 +130,10 @@ header.top .topmenu li.search {
     background: #ebebeb;
     padding: 0;
     margin-right: 39px;
+}
+
+.container {
+    padding-top: 1rem;
 }
 @media (max-width: 1200px) and (min-width: 992px) {
     header.top .topmenu li.search {
@@ -215,7 +152,8 @@ header.top .topmenu li.search {
    }
 }
 header.top .topmenu li a {
-    color: #033a71;
+    color: #000;
+    text-transform: uppercase;
     display: block;
 }
 header.top .topmenu li a:hover {
@@ -253,23 +191,20 @@ header.top .search-bar form {
 header.top .search-bar form .search-input {
     width: 480px;
     height: 100%;
-    font-size: 3.5rem;
+    font-size: 1.4rem;
     color: #c8caca;
-    font-weight: 300;
+    font-weight: 600;
+    border-radius: 0;
 }
 @media (max-width: 992px) and (min-width: 768px) {
     header.top .search-bar form .search-input {
         width: 300px;
-       /*font-size: 25px;
-       */
         font-size: 2rem;
    }
 }
 @media (max-width: 768px) {
     header.top .search-bar form .search-input {
         width: 170px;
-       /*font-size: 13px;
-       */
         font-size: 1.3rem;
    }
 }
@@ -371,7 +306,6 @@ header.top .search-bar form button:hover {
 }
 .overlay .overlay-container {
     position: relative;
-    height: 100%;
 }
 @media (max-width: 768px) {
     .overlay .overlay-container {
@@ -428,12 +362,9 @@ header.top .search-bar form button:hover {
         width: 74px;
         right: 0;
         left: auto;
-       /*background: #fff;
-       */
    }
 }
 .overlay .close-container a {
-    background: url(/_/images/close-menu.png) no-repeat;
     width: 34px;
     height: 34px;
     display: block;
@@ -513,8 +444,6 @@ header.top .search-bar form button:hover {
     color: #fff;
 }
 .overlay .search-form button {
-   /*width: 70px;
-    */
     height: 64px;
     background: transparent;
     color: #fff;
@@ -538,8 +467,6 @@ header.top .search-bar form button:hover {
 
 @media (max-width: 992px) and (min-width: 768px) {
     .overlay .mobile-menu ul li {
-       /*font-size: 28px;
-       */
         font-size: 2.8rem;
         margin-bottom: 5px;
    }
@@ -549,9 +476,7 @@ header.top .search-bar form button:hover {
         margin-bottom: 5px;
    }
 }
-.overlay .mobile-menu ul li a:hover {
-    text-decoration: underline;
-}
+
 @media (max-width: 768px) {
     .overlay .mobile-menu-small {
         margin-left: 23px;
@@ -571,7 +496,6 @@ header.top .search-bar form button:hover {
     font-size: 21px;
     font-weight: 400;
     color: #fff;
-    text-decoration: underline;
 }
 @media (max-width: 768px) {
     .overlay .mobile-menu-small ul li a {
@@ -656,15 +580,6 @@ header.top .search-bar form button:hover {
 
 .bg-eerie-black {
     background-color: #1b1b1b;
-}
-
-
-#maincontent {
-  background: url(images/rocket.jpg) no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
 }
 
 .btn-primary {
