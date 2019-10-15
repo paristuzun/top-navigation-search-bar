@@ -322,6 +322,7 @@ header.top .search-bar form button:hover {
 .overlay .box-wrap {
     height: 100%;
     padding: 50px 62px 30px 75px;
+    float: right;
 }
 @media (max-width: 992px) {
     .overlay .box-wrap {
@@ -346,10 +347,17 @@ header.top .search-bar form button:hover {
     color: #fff;
 }
 
-.fas.fa-times
-{
-    padding: 1rem;
+.overlay .close-container a {
+    margin-top: 29px;
+    margin-left: 25px;
+    width: 24px;
+    height: 24px;
+    /* multiply by Kero from the Noun Project */
+    background: #fff url(images/close-menu.svg) no-repeat;
+    color: white;
+    background-size: 100%;
 }
+
 @media (max-width: 992px) and (min-width: 768px) {
     .overlay .close-container {
         height: 95px;
@@ -379,7 +387,7 @@ header.top .search-bar form button:hover {
         margin-left: 25px;
         width: 24px;
         height: 24px;
-        background: url(images/close-menu.png) no-repeat;
+       border: 1px solid #fff;
         background-size: 100%;
    }
 }
@@ -398,13 +406,12 @@ header.top .search-bar form button:hover {
 }
 .overlay .search-form .input-group {
     border-bottom: 1px solid #89a7c1;
-   /*padding-bottom: 8px;
-   */
+ 
 }
 .overlay .search-form .input-group .input-group-btn {
-    font-size: inherit !important;
-    position: relative;
-    white-space: nowrap;
+    position: absolute;
+    right: 0;
+    bottom: 9%;
 }
 .overlay .search-form .inp {
     width: 100%;
@@ -415,6 +422,7 @@ header.top .search-bar form button:hover {
     font-size: 1rem;
     background-color: transparent;
     color: #fff;
+    margin: 1.5rem 5rem 0 0;
 
 }
 
@@ -448,6 +456,7 @@ header.top .search-bar form button:hover {
     color: #fff;
     font-size: 40px;
     font-size: 4rem;
+    border: none;
 }
 @media (max-width: 992px) and (min-width: 768px) {
     .overlay .search-form button {
@@ -560,6 +569,13 @@ header.top .search-bar form button:hover {
     font-family: FontAwesome;
     font-style: normal;
     cursor: pointer;
+}
+
+.fa-search {
+    border: 1px solid #fff;
+    padding: 0.5rem 0.8rem;
+    color: #000;
+    background-color: #fff;
 }
 
 /* Custom CSS */
